@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* === لایه پس‌زمینه تیره‌شده === */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./true.jpg") center/cover no-repeat, #f8f3f3e7;
+    filter: brightness(85%);
+    z-index: -1;
+}
+
+/* === بدنه اصلی === */
+body {
+    margin: 0;
+    background: transparent;
+}
+
+/* === صفحه اصلی === */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* === برند === */
+.brand {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.brand-text {
+    font-size: 26px;
+    font-weight: 500;
+    color: #545454;
+    white-space: nowrap;
+}
+
+.brand-logo {
+    height: 30px;
+    max-width: 100%;
+}
+
+.brand p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* === کارت فرم === */
+.card {
+    width: 380px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #888888;
+    text-align: center;
+}
+
+.hello {
+    margin: 10px 0 20px;
+    font-size: 12px;
+    color: #888888;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hello strong {
+    color: #d32f2f;
+}
+
+/* === فیلدهای کد === */
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.code-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.code-input:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.3);
+}
+
+/* === لینک بازگشت === */
+.resend-link {
+    font-size: 12px;
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+/* === تایمر === */
+.timer {
+    margin: 10px 0 20px;
+    font-size: 12px;
+    color: #888888;
+    text-align: center;
+}
+
+/* === دکمه === */
+button {
+    width: 100%;
+    height: 36px;
+    margin-top: 10px;
+    background: #d32f2f;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b71c1c;
+}
+
+/* === فوتِر قوانین === */
+.rules {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #888888;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.rules-red {
+    color: #fc5f81;
+}
+
+.rules a {
+    color: #fc5f81;
+    text-decoration: none;
+}
+
+.rules a:hover {
+    text-decoration: underline;
+}
+
+/* === فونت‌ها === */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn-Black.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* === ریسپانسیو === */
+@media (max-width: 420px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .code-input {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
